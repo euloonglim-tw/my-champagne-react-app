@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@impact-x/react-button": "^1.1.2",
+    "@impact-x/react-input": "^1.2.0",
+    "@impact-x/styles": "^1.1.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "node-sass": "^4.14.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-scripts": "3.4.4"
@@ -30,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "author": "Eu-Loong Lim <euloong.lim@thoughtworks.com>",
+  "license": "MIT"
 }

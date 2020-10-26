@@ -1,0 +1,147 @@
+@import '~@impact-x/styles';
+
+// impact-x theme
+$primary-color: $ix-color-blue-mid;
+$secondary-color: $ix-color-green-dark;
+$primary-color-white-contrast: $ix-color-blue-mid-aa;
+$secondary-color-white-contrast: $ix-color-green-dark-aa;
+$primary-color-focus-state: $ix-color-blue-mid-30;
+$secondary-color-focus-state: $ix-color-green-dark-20;
+$primary-color-hover-state: $ix-color-blue-mid-80;
+$secondary-color-hover-state: $ix-color-green-dark-80;
+
+:root {
+    --primary-color: #{$primary-color-white-contrast};
+    --secondary-color: #{$secondary-color-white-contrast};
+    --primary-color-focus-state: #{$primary-color-focus-state};
+    --secondary-color-focus-state: #{$secondary-color-focus-state};
+    --primary-color-hover-state: #{$primary-color-hover-state};
+    --secondary-color-hover-state: #{$secondary-color-hover-state};
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: $ix-color-purple;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+// The button mixin includes button styles and all it's variants, e.g. outline, s, m, l.
+button {
+  @include ix-button;
+ 
+}
+
+// The input mixin includes input styles for text and all it's variants. If the input has type `button`, `submit`, or `reset`, button styles will be applied.
+input {
+  @include ix-input;
+}
+
+// The label mixin includes label styles for text input fields, text areas and select elements.
+label {
+  @include ix-label;
+}
+
+// The link mixin includes styles for link and button styles when used with ix-styles="button".
+a {
+  @include ix-link;
+}
+
+// The checkbox mixin includes styles for checkbox.
+input[type="checkbox"] {
+  @include ix-checkbox;
+}
+
+// The radio-button mixin includes styles for radio button.
+input[type="radio"] {
+  @include ix-radio-button;
+}
+
+// The textarea mixin includes styles for textarea.
+textarea {
+  @include ix-textarea;
+}
+
+// The select mixin includes styles for select.
+select {
+  @include ix-select;
+}
+
+// The hr mixin includes styles for dividers.
+hr {
+  @include ix-hr;
+}
+
+// The code mixin will style your inline code snippets
+code {
+  @include ix-code;
+}
+
+// The pre mixin will style code blocks
+pre {
+  @include ix-pre;
+}
+
+// The following mixins will style your typography
+strong {
+  @include ix-type-weight-700;
+}
+
+h1 {
+  @include ix-type-heading-1;
+  color: $ix-color-white;
+}
+
+h2 {
+  @include ix-type-heading-2;
+  color: $ix-color-white;
+}
+
+h3 {
+  @include ix-type-heading-3;
+}
+
+h4 {
+  @include ix-type-heading-4;
+}
+
+h5 {
+  @include ix-type-heading-5;
+}
+
+h6 {
+  @include ix-type-heading-6;
+}
+
+p {
+  @include ix-type-paragraph;
+}
+
+small {
+  @include ix-type-small;
+}
+
+body {
+  color: $ix-body-text-color;
+  font-family: $ix-font-family;
+  @include ix-type-body;
+}
+
+// The card mixin includes the card style
+article[ix-styles~='card'] {
+  @include ix-card;
+}
+
+// The tag mixin includes the tag style
+span[ix-styles~='tag'] {
+  @include ix-tag;
+}
