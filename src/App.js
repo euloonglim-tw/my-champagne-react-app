@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './App.scss';
-import gatsby from './assets/great-gatsby.gif'
+import gatsby from './assets/great-gatsby-50.gif'
 
 import Button from '@impact-x/react-button';
 import Input from "@impact-x/react-input";
