@@ -18,3 +18,9 @@ test('renders email input', () => {
   const inputElement = getByText(/Sign up for updates!/i);
   expect(inputElement).toBeInTheDocument();
 });
+
+test('renders welcome', () => {
+  const { getByText } = render(<App />);
+  const inputElement = getByText(/My fabulous drink our own champagne app/i);
+  expect(inputElement).toBeInTheDocument();
+});
