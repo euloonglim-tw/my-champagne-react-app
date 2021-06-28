@@ -142,6 +142,6 @@ article[ix-styles~='card'] {
 }
 
 // The tag mixin includes the tag style
-span[ix-styles~='tag'] {
-  @include ix-tag;
-}
+//span[ix-styles~='tag'] {
+ // @include ix-tag;
+//}
