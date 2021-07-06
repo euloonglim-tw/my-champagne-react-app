@@ -8,6 +8,8 @@ In the project directory, you can run:
 
 Yarn is a long continuous length of interlocked fibres, suitable for use in the production of textiles, sewing, crocheting, knitting, weaving, embroidery, or ropemaking.
 
+Apparently yarn has something to do with programming too.
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
